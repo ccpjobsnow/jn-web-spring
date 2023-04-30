@@ -13,7 +13,7 @@ import com.ccp.jn.sync.resumes.searchs.controller.DownloadResumeToRecruiter;
 
 @CrossOrigin
 @RestController
-@RequestMapping(value = "/resumes/{resume}/recruiter/{recruiter}/viewType/{viewType}", method = RequestMethod.GET)
+@RequestMapping(value = "/recruiters/{recruiter}/resumes/{resume}/view-type/{viewType}", method = RequestMethod.GET)
 public class DownloadResumeToRecruiterController {
 
 	private DownloadResumeToRecruiter injected = CcpDependencyInjection.getInjected(DownloadResumeToRecruiter.class);
